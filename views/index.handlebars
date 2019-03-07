@@ -1,27 +1,28 @@
 <h1>Burgers!</h1>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>Welcome to the 50th Annual Burger Eating Contest!</h2>
 
 
-<div class="burger">
+<div class="burgers">
     <!--create a for loop to loop through burgers eaten/not eaten-->
-{{!-- <ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+<ul id="burgers">
+  {{#each burgers}}
+    {{#unless devoured}}
+      <li>{{burger_name}}</li>
+      <button data-id="{{id}}">Devour</button>
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>The burger has been devoured!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+  {{#each burgers}}
+    {{#if devoured}}
+     <li>{{burger_name}}</li>  
     {{/if}}
   {{/each}}
-</ul> --}}
+</ul>
 </div>
 <div class="burgersEaten"></div>
 <div class="burgersNotEaten"></div>
@@ -30,15 +31,9 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="burgerOrder">Burger Name:</label>
+    <input type="text" id="burgerOrder" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="slee">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Cat</button>
+  <button type="submit" id="add-burger-btn">Add Burger</button>
 </form>
