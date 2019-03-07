@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "food-app",
+  "main": "\u001b[D\u001b[Cserver.js",
+  "scripts": {
+    "test": "test1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewjthomsen/Burger.git"
+  },
+  "author": "Andrew J Thomsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewjthomsen/Burger/issues"
+  },
+  "homepage": "https://github.com/andrewjthomsen/Burger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "inquirer": "^6.2.2"
+  }
+}
