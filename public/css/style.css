@@ -7,10 +7,31 @@ body {
     background-color: #FFD485; 
     margin-left: auto;
     margin-right: auto;
-    padding: 25px;
+    padding: 5px 10px 15px;
     width: 75%;
-  
 }
+/* apply to wrapper */
+@media (min-width: 700px) { 
+    
+    h1 {font-size: 34px;}
+    
+    .wrapper {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+    
+@media (min-width: 1200px) { 
+    .wrapper {
+        width: 60%;
+        max-width: 1000px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
 
 h1 {
     font-family: 'Luckiest Guy', serif;
@@ -18,6 +39,7 @@ h1 {
     padding: 15px 0;
     font-size: 5vw;
     color: #990000;
+    
 }
 
 h2 {
@@ -30,9 +52,9 @@ h2 {
 }
 
 h5 {
-    
+    color: #990000;
     text-align: center;
-    font-family: 'Fontdiner Swanky', cursive;
+    font-family: 'Luckiest Guy', serif;
     font-size: 20px;
     margin: 50px;
 }
@@ -79,30 +101,19 @@ li:first-child {
     font-weight: 700;
     font-size: 16px;
 }
-/* apply to wrapper */
-@media (max-width: 700px) { 
-
-    buton, input {
-        font-size: 12px;
-        padding: 5px 10px 15px;
-    }
-    
-    h1 {font-size: 34px;}
-    
-    .menuContainer {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
-    }
-    
-    
-    @media (min-width: 1200px) { 
-      .menuContainer {
-        width: 60%;
-        max-width: 1000px;
-        margin-left: 20%;
-        margin-right: 20%;
-      }
-    }
+#eaten-burgers {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  
+}
+#burger-name {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    margin-bottom: 10px;  
+    color: #5C1100;
+    text-align: center;
+    font-family: 'Luckiest Guy', serif;
+    font-size: 20px;
+    margin: 20px;
+}

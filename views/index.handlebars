@@ -14,7 +14,7 @@
 
 <h2>Out of Stock</h2>
 
-<ul>
+<ul id="eaten-burgers">
   {{#each burgers}}
     {{#if devoured}}
      <li>{{burger_name}}</li>  
@@ -28,7 +28,7 @@
 
   <form class="create-form">
 
-  <div class="form-group">
+  <div class="form-group" id="burger-name">
     <label for="burgerOrder">Burger Name:</label>
     <input type="text" id="burgerOrder" name="name">
   </div>
