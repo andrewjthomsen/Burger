@@ -1,4 +1,5 @@
-
+USE burger;
+DELETE FROM burgers;
 INSERT INTO burgers(burger_name)
 VALUES("Surf n' Turf burger");
 INSERT INTO burgers(burger_name)

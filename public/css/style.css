@@ -1,20 +1,18 @@
-html {
-    background-color: #FFC04C;
-}
-
-body {
+.wrapper {
+    background-color: #ff9550;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
     width: 75%;
-   margin: 0 auto; 
-   min-height: 100vh;
-   flex-direction: column;
-   background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e1de7a' fill-opacity='0.2'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 h1 {
+    font-family: 'Luckiest Guy', serif;
     text-align: center;
-    font-family: 'Fontdiner Swanky', cursive;
-    font-size: 65px;
-    margin: 50px;
+    padding: 15px 0;
+    font-size: 5vw;
+    color: #990000;
 }
 
 .burgersEaten {
@@ -25,9 +23,53 @@ h1 {
 }
 
 h2 {
-     text-align: center;
+    text-align: center;
+    font-size: 30px;
+    margin: 50px;
+    font-family: 'Luckiest Guy', serif;
+    padding: 15px 0 5px;
+    color: #5C1100;
+}
+
+h5 {
+    background-color: white;
+    text-align: center;
     font-family: 'Fontdiner Swanky', cursive;
-    font-size: 40px;
+    font-size: 20px;
     margin: 50px;
 }
 
+ul {
+    list-style: none;
+
+}
+
+li {
+
+    background-color: #DDD;
+    padding: 10px;
+    margin: 2px;
+    border-top: 1px solid #D19E56;
+    border-radius: 4px;
+}
+
+li:first-child {
+    border-top: none;
+}
+
+
+.create-form {
+    text-align: center;
+}
+
+#burgers {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#add-burger-btn{
+    padding: 5px 10px;
+    border-left: none;
+    display: inline-block;
+    cursor: pointer;
+}
